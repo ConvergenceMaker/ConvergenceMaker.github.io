@@ -2,8 +2,15 @@
 </head><body>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+  body{
+    background: linear-gradient(to right, #2a2a2a,#3b3d3d);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .title{
    font-family: 'Luckiest Guy', cursive;
+   color: white;
     font-size: 30px;
     text-align: center;
     transform: scale(1);
@@ -26,44 +33,119 @@
     transition: transform 200ms ease-in-out;
   }
 
-  .dlbutton{
-      border-radius:100px;
-      text-align: center;
-      background-color: black;
-      color:white;
-      transform: scale(1);
-      transition: transform 500ms ease-in-out;
-  }
+.dlbutton {
+    border-radius: 100px;
+    border: white 3px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 28px;
+    padding: 15px 80px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    left:50%;
+    top: 16%;
+    transform: translate(-49%, -50%);
+    transition: transform 500ms ease-in-out;
+    text-decoration: none;
+}
   
   .dlbutton:hover{
     background-color: rgba(34, 34, 34, 0.986);
-  transform: scale(1.05);
-    transition: transform 500ms ease-in-out, background-color 500ms ease-in-out;
+    position: absolute;
+    left:50%;
+    top: 15.9%;
+    transform: translate(-49%, -50%);
+  color: rgb(209, 178, 0);
+  transition: transform 500ms ease-in-out, background-color 500ms ease-in-out, color 500ms ease-in-out;
   }
   
   .dlbutton:active{
     background-color: rgba(47, 47, 47, 0.986);
-    transform: scale(1.1);
-    transition: transform 200ms ease-in-out, background-color 200ms ease-in-out;
+    position: absolute;
+    left:50%;
+    top: 15.7%;
+    transform: translate(-49%, -50%);
+    color: rgb(0, 98, 163);
+    transition: transform 200ms ease-in-out, background-color 200ms ease-in-out, color 200ms ease-in-out;
   }
   </style>
-  <script>
-    document.getElementById("downloadbutton").onclick(()=>{
-        console.log("test")
-        alert("Your download will begin shortly.")
-        setTimeout(()=>{
-        document.location.href = "/download.html";
-        }, 2000);
-    });
+<h1 onclick="document.location.href = '/'" id="pageBodyTitle" class="title">Convergence Executor</h1>
+<p style="text-align: center;font-size: 18px;font-family: sans-serif;color: white;">Convergence is a roblox executor still in development.<br>There will be alot of bugs but that will be fixed at future dates.</p>
 
-    document.getElementById("pageBodyTitle").onclick(()=>{
-        console.log("test")
-        document.location.href = "/";
-    });
- </script>
-<h1 id="pageBodyTitle" class="title">Convergence Executor</h1>
-<p style="text-align: center;font-size: 18px;font-family: sans-serif;">Convergence is a roblox executor still in development.<br>There will be alot of bugs but that will be fixed at future dates.</p>
+<a href="/Convergence%20V2.zip" class="dlbutton">Download!
+</a></body></html><html><head><title>Convergence</title>
+</head><body>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
-<button id="downloadbutton" class="dlbutton">Download!</button>
+  body{
+    background: linear-gradient(to right, #2a2a2a,#3b3d3d);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .title{
+   font-family: 'Luckiest Guy', cursive;
+   color: white;
+    font-size: 30px;
+    text-align: center;
+    transform: scale(1);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+     transition: transform 500ms ease-in-out;
+  }
+  
+  .title:hover{
+    transform: scale(1.1);
+    transition: transform 500ms ease-in-out;
+  }
+  
+  .title:active{
+    transform: scale(1.15);
+    transition: transform 200ms ease-in-out;
+  }
 
-</body></html>
+.dlbutton {
+    border-radius: 100px;
+    border: white 3px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 28px;
+    padding: 15px 80px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    left:50%;
+    top: 16%;
+    transform: translate(-49%, -50%);
+    transition: transform 500ms ease-in-out;
+    text-decoration: none;
+}
+  
+  .dlbutton:hover{
+    background-color: rgba(34, 34, 34, 0.986);
+    position: absolute;
+    left:50%;
+    top: 15.9%;
+    transform: translate(-49%, -50%);
+  color: rgb(209, 178, 0);
+  transition: transform 500ms ease-in-out, background-color 500ms ease-in-out, color 500ms ease-in-out;
+  }
+  
+  .dlbutton:active{
+    background-color: rgba(47, 47, 47, 0.986);
+    position: absolute;
+    left:50%;
+    top: 15.7%;
+    transform: translate(-49%, -50%);
+    color: rgb(0, 98, 163);
+    transition: transform 200ms ease-in-out, background-color 200ms ease-in-out, color 200ms ease-in-out;
+  }
+  </style>
+<h1 onclick="document.location.href = '/'" id="pageBodyTitle" class="title">Convergence Executor</h1>
+<p style="text-align: center;font-size: 18px;font-family: sans-serif;color: white;">Convergence is a roblox executor still in development.<br>There will be alot of bugs but that will be fixed at future dates.</p>
+
+<a href="/Convergence%20V2.zip" class="dlbutton">Download!
+</a></body></html>
