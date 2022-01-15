@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<html>
-<title>Convergence</title>
-<body>
+<html><head><title>Convergence</title>
+</head><body>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
   .title{
@@ -19,16 +17,53 @@
   }
   
   .title:hover{
-  transform: scale(1.1);
+    transform: scale(1.1);
     transition: transform 500ms ease-in-out;
   }
   
-  .title:left{
-      transform: scale(1.15);
+  .title:active{
+    transform: scale(1.15);
     transition: transform 200ms ease-in-out;
   }
+
+  .dlbutton{
+      border-radius:100px;
+      text-align: center;
+      background-color: black;
+      color:white;
+      transform: scale(1);
+      transition: transform 500ms ease-in-out;
+  }
+  
+  .dlbutton:hover{
+    background-color: rgba(34, 34, 34, 0.986);
+  transform: scale(1.05);
+    transition: transform 500ms ease-in-out, background-color 500ms ease-in-out;
+  }
+  
+  .dlbutton:active{
+    background-color: rgba(47, 47, 47, 0.986);
+    transform: scale(1.1);
+    transition: transform 200ms ease-in-out, background-color 200ms ease-in-out;
+  }
   </style>
-<h1 class="title">Convergence Executor</h1>
+  <script>
+    document.getElementById("downloadbutton").onclick(()=>{
+        console.log("test")
+        alert("Your download will begin shortly.")
+        setTimeout(()=>{
+        document.location.href = "/download.html";
+        }, 2000);
+    });
+
+    document.getElementById("pageBodyTitle").onclick(()=>{
+        console.log("test")
+        document.location.href = "/";
+    });
+ </script>
+<h1 id="pageBodyTitle" class="title">Convergence Executor</h1>
 <p style="text-align: center;font-size: 18px;font-family: sans-serif;">Convergence is a roblox executor still in development.<br>There will be alot of bugs but that will be fixed at future dates.</p>
-</body>
-</html>
+
+<button id="downloadbutton" class="dlbutton">Download!</button>
+
+</body></html>
